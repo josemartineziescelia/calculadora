@@ -60,6 +60,12 @@ public class App {
         return num1 - num2;
     }
 
+    public static int potencia(int num1, int num2) {
+        System.out.println("Hacemos potencia");
+        return (int) Math.pow(num1, num2);
+    }
+    
+
 
     public static int calculadora(int num1, int num2, int operacion) { 
         switch (operacion) {
@@ -71,6 +77,9 @@ public class App {
                 return multiplicar(num1, num2);
             case 4:
                 return dividir(num1, num2);
+            case 5: 
+                return potencia(num1, num2);
+                
             default:
                 System.out.println("Operación no válida");
                 break;
